@@ -8,8 +8,8 @@ var nodemailer = require("nodemailer");
 var smtpTransport = nodemailer.createTransport("SMTP",{
     service: "Gmail",
     auth: {
-        user: "lovecoptersf@gmail.com",
-        pass: "chococopter415"
+        user: "xxxxxx",
+        pass: "xxxxxx"
     }
 });
 
@@ -24,7 +24,7 @@ exports.add_mail = function(req, res) {
 	// setup e-mail data with unicode symbols
 	var mailOptions = {
 		from: email, // sender address
-		to: "lovecoptersf@gmail.com", // list of receivers
+		to: "xxxxxxx", // list of receivers
 		subject: "New Beta Request", // Subject line
 		text: "The following user has requested to be put on the beta list: " + email // plaintext body
 	};
