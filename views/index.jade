@@ -54,7 +54,7 @@ html(lang="en")>
 		script
 			$('#register').click(function() {
 					var email = $('#register_email').val();
-					var jqxhr = $.getJSON('http://localhost:5000/add_mail',
+					var jqxhr = $.getJSON('http://lovecopter.herokuapp.com/add_mail',
 					{"email":email},
 					function (data) {
 						console.log(data);
